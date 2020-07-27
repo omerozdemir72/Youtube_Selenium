@@ -1,40 +1,113 @@
 package Locators;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 public class CssSelector {
 
     public static void main(String[] args) {
 
 
-
-
-        /*
-        id için =   htmlTag#id ,         #id
-        class için = html.classname,   .classname               (classname için nokta kullanılır.)
-         3.parent > childTag
-
-         Google:
-        input.gLFyf gsfi  (araya nokta gerekli)
-          input[maxlength='2048']
-
-          contains  = input[type*=te]    * işareti contains demek.
-                                input[class*=gN]
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\omero\\Selenium\\geckodriver.exe");
 
 
 
-                      starts with :  (google klavye tuşu)
-                      span[class^=h]
+        WebDriver driver = new FirefoxDriver();
 
 
 
-                        kaçıncı element? Amazon leftnavi
-                        ul.hmenu.hmenu-visible>li:nth-of-type(5)
+
+        driver.manage().window().maximize();
+
+        driver.get("http://www.google.com");
 
 
-                        http://startpage.vg/?var2=axr.vg
-                        div[class*=mewtwo-flights-submit_button]>button
-                        section[class$=container]:first-of-type
-                        section[class$=container]:first-of-type>div>header+form[target*=blank]
-                span[data-tab^=f]
+
+
+
+
+        //todo   CHİLD BULARAK  ve basit hali
+
+
+      //input[class=gNO89b]
+
+        //          html > body > div> style
+        //html>body>div>div
+
+        /*todo      #id
+
+    Başına # koyarız.
+    Ya da    div[id=footer]
+    #footer
+
+    div#footer
+div[id=footer]
+*/
+
+
+
+/*    todo  CLASS
+
+
+        .RNmpXc
+        input[class=RNmpXc]
+input.gLFyf.gsfi
+Birden fazla class var ise aralarına nokta koyuyoruz.
+
+
+
+todo   CONTAİNS
+
+
+
+input[id*='user']
+input[id*='name']
+
+
+
+input[class*=gLFyf]
+
+input[class*=gLF]
+maxlength text kısmı
+input[maxlength*='4']
+
+
+todo Starting the text ve Child mantıgı
+
+div[class^='R']
+input[maxlength^='207']
+
+div#searchform.jhp.big>nth-child(1)
+
+div.sfbg>:first-child
+div.J9leP>:nth-child(1)
+div#searchform>:nth-child(3)
+div#tophf>:nth-child(2)
+
+
+todo     ending with
+ $
+
+input[id$='name']
+
+
+id = Search form
+div[id$='form']
+
+div[id$=b]
+
+todo nth-of-type , first-of-type
+
+
+
+ul.erkvQe>li:first-of-type
+
+ul.erkvQe>li:last-of-type
+ul.erkvQe>li:nth-of-type(2)
+
+ul.erkvQe>:last-of-type
+
          */
+
     }
 }
