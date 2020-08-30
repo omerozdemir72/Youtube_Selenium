@@ -17,19 +17,19 @@ public class Alert2 {
 
         driver.manage().window().maximize();
 
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         driver.get("http://demo.automationtesting.in/Alerts.html");
 
-
-
-        driver.findElement(By.xpath("(//a[@class='analystic'])[1]")).click();
-
+//todo                      Basit Uyarı
         driver.findElement(By.cssSelector(".btn.btn-danger")).click();
+        Thread.sleep(2000);
 
-        Thread.sleep(1500);
-
+        String message1 = driver.switchTo().alert().getText();
+        System.out.println(message1);
+        Thread.sleep(1000);
         driver.switchTo().alert().accept();
+
+
+//todo                     Teyit uyarıları
 
 
         driver.findElement(By.xpath("(//a[@class='analystic'])[2]")).click();
@@ -37,31 +37,33 @@ public class Alert2 {
 
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Thread.sleep(1500);
 
+        Thread.sleep(1500);
 
         driver.switchTo().alert().dismiss();
 
 
 
+
+
+//todo             input bekleyen uyarılar
         driver.findElement(By.xpath("(//a[@class='analystic'])[3]")).click();
 
 
         driver.findElement(By.cssSelector(".btn.btn-info")).click();
 
-        driver.switchTo().alert().sendKeys("Selenium Türkçe");
+        Thread.sleep(1500);
 
+        driver.switchTo().alert().sendKeys("Ömer");
         Thread.sleep(1500);
 
         driver.switchTo().alert().accept();
 
-        String message = driver.findElement(By.cssSelector("#demo1")).getText();
+
+        String message = driver.findElement(By.cssSelector("#Textbox>p")).getText();
 
 
-        System.out.println(message);
+        System.out.println("Mesajım :   " + message);
 
-        Assert.assertEquals("Hello Selenium Türkçe How are you today",driver.findElement(By.cssSelector("#demo1")).getText());
-
-        System.out.println("Çalışıyor...");
     }
 }

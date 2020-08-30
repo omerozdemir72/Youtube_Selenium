@@ -17,7 +17,12 @@ public class Class2_id {
 
         driver.manage().window().maximize();
 
-        driver.findElement(By.id("createacc")).click();
+
+      //  driver.findElement(By.linkText("Hesap oluştur")).click();
+
+        driver.findElement(By.partialLinkText("oluştur")).click();
+
+     //   driver.findElement(By.id("createacc")).click();
 
         Thread.sleep(1000);
 
@@ -29,6 +34,14 @@ public class Class2_id {
                 Thread.sleep(1000);
         //Soyad
         driver.findElement(By.id("usernamereg-lastName")).sendKeys("Özdemir");
+
+
+        driver.findElement(By.id("usernamereg-yid")).sendKeys("omero12");
+
+
+        driver.findElement(By.id("usernamereg-password")).sendKeys("123123");
+
+        driver.findElement(By.className("phone-no ")).sendKeys("012341231212");
 
 
 
