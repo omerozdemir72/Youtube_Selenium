@@ -18,6 +18,7 @@ public class Select_Class {
         driver.manage().window().maximize();
 
 
+
         driver.get("https://www.techlistic.com/p/selenium-practice-form.html");
 
 

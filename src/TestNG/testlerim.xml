@@ -1,0 +1,17 @@
+<suite name="My Suite">
+    <tests name="My Tests">
+        <test name="Test1">
+           <classes>
+               <class name="TestNG.Testler"/>
+               <class name="TestNG.testNg2"/>
+           </classes>
+        </test>
+        <test name="Test2">
+
+            <classes>
+                <class name="TestNG.Basit_Test"/>
+            </classes>
+
+        </test>
+    </tests>
+</suite>
