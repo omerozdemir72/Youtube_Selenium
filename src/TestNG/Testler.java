@@ -6,19 +6,19 @@ public class Testler {
 
 
 
-    @Test
+    @Test(groups = "grup1")
     public void Test1(){
 
 
         System.out.println("TEST 1 ----------------");
     }
-    @Test
+    @Test(groups = "grup1")
     public void Test2(){
 
 
         System.out.println("TEST 2 ----------------");
     }
-    @Test
+    @Test(groups = "grup1")
     public void Test3(){
 
 
