@@ -1,0 +1,31 @@
+<suite name="My suite 2">
+    <tests name="My Tests 2">
+        <test name="Include Test">
+            <classes>
+                <class name="TestNG.Testler"/>
+                <methods>
+                    <!--     <include name="Test1"/>
+                         <include name="Test2"/>  -->
+                    <exclude name="Test5"/>
+                    <exclude name="Test6"/>
+                </methods>
+            </classes>
+        </test>
+        <test name="Group Test">
+            <groups>
+                <run>
+                    <exclude name="grup1"/>
+                </run>
+            </groups>
+            <classes>
+                <class name="TestNG.Testler"/>
+            </classes>
+        </test>
+
+        <test name="Test 3">
+<classes>
+    <class name="TestNG.Basit_Test"/>
+</classes>
+        </test>
+    </tests>
+</suite>

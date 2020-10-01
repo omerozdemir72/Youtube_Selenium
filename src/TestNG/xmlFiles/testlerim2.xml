@@ -20,6 +20,5 @@
             <classes>
                 <class name="TestNG.Testler"/>
             </classes>
-        </test>
     </tests>
 </suite>

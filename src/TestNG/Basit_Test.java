@@ -43,8 +43,8 @@ public class Basit_Test {
         String a = "Techno Study";
         String b= "Techno Study";
 
-        Assert.assertEquals(b,a);
-
+       // Assert.assertEquals(b,a);
+Assert.fail("Assert Fail");
     }
     @AfterClass
     public void AfterClass(){
