@@ -1,5 +1,5 @@
 <suite name="My suite 2">
-    <tests name="My Tests 2">
+    <tests name="My Tests 1">
         <test name="Include Test">
             <classes>
                 <class name="TestNG.Testler"/>

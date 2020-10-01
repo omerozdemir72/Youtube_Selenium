@@ -1,0 +1,38 @@
+<suite name="My Suite" parallel="tests" thread-count="5">
+    <tests name="My Tests">
+        <test name="Your Store Form Test">
+            <parameter name="firstname" value="ahmet"/>
+            <parameter name="lastname" value="özdemir"/>
+            <parameter name="email" value="omer@gmail.com"/>
+            <parameter name="telephone" value="012323412312"/>
+            <parameter name="password" value="omer1234"/>
+            <classes>
+                <class name="TestNG.parameters"/>
+            </classes>
+        </test>
+        <test name="Chrome Test">
+            <parameter name="browser" value="chrome"/>
+            <classes>
+                <class name="TestNG.myStoreTest"/>
+            </classes>
+        </test>
+        <test name="Firefox Test">
+            <parameter name="browser" value="firefox"/>
+            <classes>
+                <class name="TestNG.myStoreTest"/>
+            </classes>
+        </test>
+        <test name="Test1">
+            <classes>
+                <class name="TestNG.Testler"/>
+                <class name="TestNG.testNg2"/>
+            </classes>
+        </test>
+        <test name="Test2">
+            <classes>
+                <class name="TestNG.Basit_Test"/>
+            </classes>
+
+        </test>
+    </tests>
+</suite>
