@@ -24,7 +24,7 @@
 
         <test name="Test 3">
 <classes>
-    <class name="TestNG.Basit_Test"/>
+    <class name="TestNG.Giris.Basit_Test"/>
 </classes>
         </test>
     </tests>

@@ -1,4 +1,4 @@
-package TestNG;
+package TestNG.Giris;
 
 import org.testng.annotations.*;
 

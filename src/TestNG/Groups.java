@@ -4,7 +4,7 @@ import org.junit.After;
 import org.openqa.selenium.json.JsonOutput;
 import org.testng.annotations.*;
 
-public class testNg2 {
+public class Groups {
 
 
 

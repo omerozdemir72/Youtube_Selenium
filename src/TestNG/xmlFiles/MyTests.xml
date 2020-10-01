@@ -7,7 +7,7 @@
             <parameter name="telephone" value="012323412312"/>
             <parameter name="password" value="omer1234"/>
             <classes>
-                <class name="TestNG.parameters"/>
+                <class name="TestNG.yourStoreTest_Parameters"/>
             </classes>
         </test>
         <test name="Chrome Test">
@@ -25,12 +25,12 @@
         <test name="Test1">
             <classes>
                 <class name="TestNG.Testler"/>
-                <class name="TestNG.testNg2"/>
+                <class name="TestNG.Groups"/>
             </classes>
         </test>
         <test name="Test2">
             <classes>
-                <class name="TestNG.Basit_Test"/>
+                <class name="TestNG.Giris.Basit_Test"/>
             </classes>
 
         </test>
