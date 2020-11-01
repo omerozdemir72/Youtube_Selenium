@@ -32,7 +32,7 @@ public class yourStoreTest_Parameters {
     driver.findElement(By.cssSelector("#input-password")).sendKeys(password);
 
     driver.findElement(By.cssSelector("#input-confirm")).sendKeys(password);
-
+//aasss
     }
 
     @AfterClass
